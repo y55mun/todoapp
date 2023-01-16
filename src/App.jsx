@@ -9,7 +9,7 @@ function App() {
   const [inputValue, setinputValue] = useState('')
   return (
     <main>
-      <input value={inputValue} type="text" onChange={(event)=>console.log(event.target.value)}/>
+      <input value={inputValue} type="text" onChange={(event)=>setinputValue(event.target.value)}/>
       <button>추가</button>
     </main>
   )
