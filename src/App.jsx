@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import './App.css';
+import TodoBoard from "./components/TodoBoard"
 
 // To Do App 만들기
 // 1. 인풋창이 있고 버튼이 있다.
@@ -16,6 +17,8 @@ function App() {
     <main>
       <input value={inputValue} type="text" onChange={(event)=>setinputValue(event.target.value)}/>
       <button onClick={addItem}>추가</button>
+
+      <TodoBoard/>
     </main>
   )
 }
