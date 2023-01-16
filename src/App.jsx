@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <main>
-      <input type="text"/>
+      <input type="text" onChange={(event)=>console.log(event.target.value)}/>
       <button>추가</button>
     </main>
   )
