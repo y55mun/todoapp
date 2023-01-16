@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <main>
-      <input type="text">
+      <input type="text"/>
       <button>추가</button>
     </main>
   )
