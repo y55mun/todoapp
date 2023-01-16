@@ -7,10 +7,14 @@ import './App.css';
 // 3. 아이템 삭제 버튼을 누르면 삭제가 가능하다.
 function App() {
   const [inputValue, setinputValue] = useState('')
+  const [todoList, setTodolist] = useState([])
+  const addItem = () => {
+    console.log("I'm herrrr!!", inputValue)
+  }
   return (
     <main>
       <input value={inputValue} type="text" onChange={(event)=>setinputValue(event.target.value)}/>
-      <button>추가</button>
+      <button onClick={addItem}>추가</button>
     </main>
   )
 }
