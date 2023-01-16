@@ -10,6 +10,7 @@ function App() {
   const [todoList, setTodolist] = useState([])
   const addItem = () => {
     console.log("I'm herrrr!!", inputValue)
+    setTodolist([...todoList, inputValue])
   }
   return (
     <main>
